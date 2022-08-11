@@ -1,3 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /***** Primary *****/
+  --LimeGreen: hsl(163, 72%, 41%);
+  --BrightRed: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+  /***** End Primary *****/
+
+  /***** Light theme *****/
+  --White: hsl(0, 0%, 100%);
+  /* BG */
+
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  /* Top BG Pattern */
+
+  --LightGrayishBlue: hsl(227, 47%, 96%);
+  /* Card BG */
+
+  --DarkGrayishBlue: hsl(228, 12%, 44%);
+  /* Text */
+
+  --VeryDarkBlue: hsl(230, 17%, 14%);
+  /* Text */
+
+  /***** End Light theme *****/
+
+  /***** Dark theme *****/
+  --VeryDarkBlue: hsl(230, 17%, 14%);
+  /* BG */
+
+  --VeryDarkBlue: hsl(232, 19%, 15%);
+  /* Top BG Pattern
+ */
+  --DarkDesaturatedBlue: hsl(228, 28%, 20%);
+  /* Card BG */
+
+  --DesaturatedBlue: hsl(228, 34%, 66%);
+  /* Text */
+
+  --White: hsl(0, 0%, 100%);
+  /* Text */
+
+  /***** End Dark theme *****/
+}
