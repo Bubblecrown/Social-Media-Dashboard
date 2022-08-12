@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  box-sizing: border-box;
+}
 :root {
   /***** Primary *****/
   --LimeGreen: hsl(163, 72%, 41%);

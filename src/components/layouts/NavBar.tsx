@@ -4,7 +4,7 @@ export default function NavBar() {
   const [enabled, setEnabled] = useState(false);
   return (
     <>
-      <nav className="px-52 py-8 flex justify-between">
+      <nav className="px-[10%] lg:px-60 py-8 flex flex-col lg:justify-between">
         <section className="flex flex-wrap flex-col justify-center items-start">
           <h1 className="text-2xl font-bold text-[color:var(--VeryDarkBlue)]">
             Social Media Dashboard
@@ -13,10 +13,13 @@ export default function NavBar() {
             Total Followers: 23,004
           </p>
         </section>
-        <section className="flex flex-rows gap-3 items-center">
+        <hr className="my-4 border-t-[color:var(--DarkGrayishBlue)]" />
+        {/* Dark mode button */}
+        <section className="flex flex-rows lg:gap-3 items-center justify-between">
           <p className="text-sm font-semibold text-[color:var(--DarkGrayishBlue)]">
             Dark Mode
           </p>
+          
           <span className="relative items-center cursor-pointer">
             {/* sr-only ซ่อนเอาไว้ในเพจปกติเพื่อแสดงในโปรแกรมการอ่านหหน้าจอเท่านั้น เช่น ฟอร์มที่ไม่มี label เขียนไว้จะเป็นปัญหาสำหรับผู้มีปัญหาสายตาที่ใช้โปรแกรมการอ่านหน้าจอ แต่เราก็ต้องการสไตล์แบบไม่มี label เช่นกัน เราเลยใช้ sr-only เพื่อซ่อนมันในปกติ แต่มันก็จะแสดงหากมีใครใช้โปรแกรมการอ่านหน้าจอ*/}
             {/* ในกรณีนี้เราใช้ sr-only ในการซ่อนปุ่ม checkbox หรือจะใช้อย่างอื่นเช่น appearance none ก็ได้ */}
@@ -37,6 +40,8 @@ export default function NavBar() {
             ></div>
           </span>
         </section>
+        {/*End Dark mode button */}
+
       </nav>
     </>
   );
