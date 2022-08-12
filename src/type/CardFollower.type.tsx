@@ -4,4 +4,5 @@ export interface CardFollowerProps{
   amount:string;
   arrow:string;
   today:number;
+  borderColor:string;
 }

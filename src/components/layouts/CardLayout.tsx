@@ -12,6 +12,7 @@ export default function CardLayout() {
     <main className="flex justify-center w-full px-[10%]">
       <section className="w-full flex lg:flex-row flex-col lg:justify-between gap-5">
         <CardFollower
+        borderColor="border-[color:var(--Facebook)]"
           image={facebookIcon}
           account="@nathanf"
           amount="1987"
@@ -19,6 +20,7 @@ export default function CardLayout() {
           today={12}
         />
         <CardFollower
+        borderColor="border-[color:var(--Twitter)]"
           image={twitterIcon}
           account="@nathanf"
           amount="1044"
@@ -26,6 +28,7 @@ export default function CardLayout() {
           today={99}
         />
         <CardFollower
+        borderColor="borderGradient"
           image={igIcon}
           account="@nathanf"
           arrow={upIcon}
@@ -33,6 +36,7 @@ export default function CardLayout() {
           today={1099}
         />
         <CardFollower
+        borderColor="border-[color:var(--YouTube)]"
           image={youtubeIcon}
           account="@nathanf"
           arrow={downIcon}
