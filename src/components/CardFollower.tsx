@@ -3,7 +3,7 @@ import React from "react";
 import { CardFollowerProps } from "../type/CardFollower.type";
 export default function CardFollower(props: CardFollowerProps) {
   const classProps = classnames(
-    "flex flex-col  justify-center items-center lg:w-[23%] w-full h-[220px] bg-[color:var(--LightGrayishBlue)] rounded-md border-t-4 ",
+    "flex flex-col justify-center items-center w-full h-[220px] bg-[color:var(--LightGrayishBlue)] rounded-md border-t-4 ",
     props.borderColor
   );
   return (
