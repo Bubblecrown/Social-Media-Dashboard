@@ -8,12 +8,12 @@ import upIcon from "../../assets/icon-up.svg";
 import downIcon from "../../assets/icon-down.svg";
 export default function CardViewLayout() {
   return (
-    <main className="w-full mt-14 px-[10%] flex justify-start items-center">
+    <main className="w-full my-12 px-[10%] flex justify-start items-center lg:my-10">
       <section className="w-full">
-        <h1 className="text-3xl font-bold text-[color:var(--DarkGrayishBlue)]">
+        <h1 className="text-3xl font-bold text-[color:var(--DarkGrayishBlue)] mb-8 lg:text-2xl lg:mb-6">
           Overview - Today
         </h1>
-        <article>
+        <article className="grid grid-cols-1 lg:grid-cols-4 w-full gap-4 md:grid-cols-2">
           <CardView
             image={facebookIcon}
             label="Page Views"

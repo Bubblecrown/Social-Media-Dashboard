@@ -1,19 +1,30 @@
 import React from "react";
 import { CardViewProps } from "../type/CardView";
 
-export default function CardView(props:CardViewProps) {
+export default function CardView(props: CardViewProps) {
   return (
     <main>
-      <section>
-        <article>
-          <h2>{props.label}</h2>
-          <img src={props.image} alt="" />
+      <section className="bg-[color:var(--LightGrayishBlue)] p-6 box-border rounded-md gap-5 grid">
+        <article className="flex justify-between items-center" >
+          <h2 className="font-semibold text-[color:var(--DarkGrayishBlue)]">
+            {props.label}
+          </h2>
+          <img src={props.image} alt="" className="w-5 h-auto"/>
         </article>
-        <article>
-          <h1>{props.views}</h1>
-          <span>
+        <article className="flex justify-between items-end">
+          <h1 className="text-3xl font-bold">{props.views}</h1>
+          <span className="flex items-center">
             <img src={props.arrow} alt="" />
-            <p>{props.percentage}%</p>
+            <p
+              className={
+                props.arrow ===
+                "/static/media/icon-up.09cfa95e6e89e162c5c150356e6de276.svg"
+                  ? "text-[color:var(--LimeGreen)] font-semibold text-sm"
+                  : "text-[color:var(--BrightRed)] font-semibold text-sm"
+              }
+            >
+              {props.percentage}%
+            </p>
           </span>
         </article>
       </section>
