@@ -1,6 +1,6 @@
 import React from "react";
-import CardView from "../components/CardView";
 import CardLayout from "../components/layouts/CardLayout";
+import CardViewLayout from "../components/layouts/CardViewLayout";
 import NavBar from "../components/layouts/NavBar";
 
 export default function SocialDashboard() {
@@ -12,7 +12,7 @@ export default function SocialDashboard() {
           <CardLayout/>
         </article>
         <section>
-          <CardView/>
+          <CardViewLayout />
         </section>
       </main>
     </>
