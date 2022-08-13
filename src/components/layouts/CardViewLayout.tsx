@@ -14,62 +14,62 @@ export default function CardViewLayout() {
           Overview - Today
         </h1>
         <article>
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
-        <CardView
-          image={facebookIcon}
-          label="Page View"
-          views="87"
-          arrow={upIcon}
-          percentage={3}
-        />
+          <CardView
+            image={facebookIcon}
+            label="Page Views"
+            views="87"
+            arrow={upIcon}
+            percentage={3}
+          />
+          <CardView
+            image={facebookIcon}
+            label="Likes"
+            views="52"
+            arrow={downIcon}
+            percentage={2}
+          />
+          <CardView
+            image={igIcon}
+            label="Likes"
+            views="5462"
+            arrow={upIcon}
+            percentage={2257}
+          />
+          <CardView
+            image={igIcon}
+            label="Profile Views"
+            views="5462"
+            arrow={upIcon}
+            percentage={1375}
+          />
+          <CardView
+            image={twitterIcon}
+            label="Retweets"
+            views="117"
+            arrow={upIcon}
+            percentage={303}
+          />
+          <CardView
+            image={twitterIcon}
+            label="Likes"
+            views="507"
+            arrow={upIcon}
+            percentage={553}
+          />
+          <CardView
+            image={youtubeIcon}
+            label="Likes"
+            views="107"
+            arrow={downIcon}
+            percentage={19}
+          />
+          <CardView
+            image={youtubeIcon}
+            label="Total Views"
+            views="1407"
+            arrow={downIcon}
+            percentage={12}
+          />
         </article>
       </section>
     </main>
