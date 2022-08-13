@@ -6,8 +6,8 @@ export default function CardFollower(props: CardFollowerProps) {
     "flex flex-col justify-center items-center w-full h-[220px] bg-[color:var(--LightGrayishBlue)] rounded-md border-t-4 ",
     props.borderColor
   );
+
   return (
-    <>
       <section className={classProps}>
         <article className="flex flex-row gap-2 items-center">
           <img src={props.image} alt="" className="w-5 h-auto" />
@@ -36,6 +36,5 @@ export default function CardFollower(props: CardFollowerProps) {
           </p>
         </article>
       </section>
-    </>
   );
 }
