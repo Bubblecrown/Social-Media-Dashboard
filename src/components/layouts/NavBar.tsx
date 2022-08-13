@@ -4,7 +4,7 @@ export default function NavBar() {
   const [enabled, setEnabled] = useState(false);
   return (
     <>
-      <nav className="px-[10%] lg:px-60 py-8 flex flex-col lg:justify-between">
+      <nav className="px-[10%]  py-8 flex flex-col lg:justify-between">
         <section className="flex flex-wrap flex-col justify-center items-start">
           <h1 className="text-2xl font-bold text-[color:var(--VeryDarkBlue)]">
             Social Media Dashboard
@@ -13,7 +13,7 @@ export default function NavBar() {
             Total Followers: 23,004
           </p>
         </section>
-        <hr className="my-4 border-t-[color:var(--DarkGrayishBlue)]" />
+        <hr className="my-4 border-t-[color:var(--DarkGrayishBlue)] lg:border-none" />
         {/* Dark mode button */}
         <section className="flex flex-rows lg:gap-3 items-center justify-between">
           <p className="text-sm font-semibold text-[color:var(--DarkGrayishBlue)]">

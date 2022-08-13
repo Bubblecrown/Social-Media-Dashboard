@@ -28,7 +28,7 @@ export default function CardLayout() {
           today={99}
         />
         <CardFollower
-        borderColor="borderGradient"
+        borderColor="borderGradient "
           image={igIcon}
           account="@nathanf"
           arrow={upIcon}
