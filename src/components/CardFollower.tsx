@@ -8,7 +8,7 @@ export default function CardFollower(props: CardFollowerProps) {
   );
 
   return (
-      <section className={classProps}>
+      <header className={classProps}>
         <article className="flex flex-row gap-2 items-center">
           <img src={props.image} alt="" className="w-5 h-auto" />
           <h2 className="text-[color:var(--text-secondary)] ">
@@ -35,6 +35,6 @@ export default function CardFollower(props: CardFollowerProps) {
             {props.today} Today
           </h2>
         </article>
-      </section>
+      </header>
   );
 }
