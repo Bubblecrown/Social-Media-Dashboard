@@ -19,9 +19,9 @@ export default function CardFollower(props: CardFollowerProps) {
           <h1 className="text-[color:var(--text-primary)] text-5xl font-bold ">
             {props.amount}
           </h1>
-          <h3 className="mt-2 text-[color:var(--text-secondary)] tracking-[6px] uppercase text-[12px]">
+          <p className="mt-2 text-[color:var(--text-secondary)] tracking-[6px] uppercase text-[12px]">
             followers
-          </h3>
+          </p>
         </article>
         <article className="flex items-center gap-1 font-bold text-sm">
           <img src={props.arrow} alt="" />

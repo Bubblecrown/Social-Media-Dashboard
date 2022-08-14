@@ -3,7 +3,7 @@ import { CardViewProps } from "../type/CardView";
 
 export default function CardView(props: CardViewProps) {
   return (
-    <main>
+    <>
       <section className="bg-[color:var(--bg-card)] p-6 box-border rounded-md gap-5 grid">
         <article className="flex justify-between items-center" >
           <h2 className="font-semibold text-[color:var(--text-secondary)]">
@@ -28,6 +28,6 @@ export default function CardView(props: CardViewProps) {
           </span>
         </article>
       </section>
-    </main>
+    </>
   );
 }
