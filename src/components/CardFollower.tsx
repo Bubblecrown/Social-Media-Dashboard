@@ -11,9 +11,9 @@ export default function CardFollower(props: CardFollowerProps) {
       <section className={classProps}>
         <article className="flex flex-row gap-2 items-center">
           <img src={props.image} alt="" className="w-5 h-auto" />
-          <p className="text-[color:var(--text-secondary)] ">
+          <h2 className="text-[color:var(--text-secondary)] ">
             {props.account}
-          </p>
+          </h2>
         </article>
         <article className="text-center my-4">
           <h1 className="text-[color:var(--text-primary)] text-5xl font-bold ">
@@ -25,7 +25,7 @@ export default function CardFollower(props: CardFollowerProps) {
         </article>
         <article className="flex items-center gap-1 font-bold text-sm">
           <img src={props.arrow} alt="" />
-          <p
+          <h2
             className={
               props.arrow === "/Social-Media-Dashboard/static/media/icon-up.09cfa95e6e89e162c5c150356e6de276.svg"
                 ? "text-[color:var(--LimeGreen)]"
@@ -33,7 +33,7 @@ export default function CardFollower(props: CardFollowerProps) {
             }
           >
             {props.today} Today
-          </p>
+          </h2>
         </article>
       </section>
   );
