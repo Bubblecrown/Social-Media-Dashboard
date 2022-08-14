@@ -27,7 +27,7 @@ export default function CardFollower(props: CardFollowerProps) {
           <img src={props.arrow} alt="" />
           <p
             className={
-              props.arrow === "/static/media/icon-up.09cfa95e6e89e162c5c150356e6de276.svg"
+              props.arrow === "/Social-Media-Dashboard/static/media/icon-up.09cfa95e6e89e162c5c150356e6de276.svg"
                 ? "text-[color:var(--LimeGreen)]"
                 : "text-[color:var(--BrightRed)]"
             }

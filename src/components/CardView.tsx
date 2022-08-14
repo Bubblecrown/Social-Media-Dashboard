@@ -18,7 +18,7 @@ export default function CardView(props: CardViewProps) {
             <p
               className={
                 props.arrow ===
-                "/static/media/icon-up.09cfa95e6e89e162c5c150356e6de276.svg"
+                "/Social-Media-Dashboard/static/media/icon-up.09cfa95e6e89e162c5c150356e6de276.svg"
                   ? "text-[color:var(--LimeGreen)] font-semibold text-sm"
                   : "text-[color:var(--BrightRed)] font-semibold text-sm"
               }
