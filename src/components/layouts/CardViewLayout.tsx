@@ -8,7 +8,7 @@ import upIcon from "../../assets/icon-up.svg";
 import downIcon from "../../assets/icon-down.svg";
 export default function CardViewLayout() {
   return (
-    <section className="w-full h-full py-8 px-[10%] flex justify-start items-center ">
+    <section className="w-full h-full ss:py-8 ld:py-0 px-[10%] flex justify-start items-center ">
       <article className="w-full">
         <h1 className="text-2xl font-bold text-[color:var(--text-secondary)] mb-8 lg:text-2xl lg:mb-6">
           Overview - Today
