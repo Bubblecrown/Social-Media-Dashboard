@@ -22,10 +22,9 @@ export default function NavBar() {
       </section>
       <hr className="my-4 border-t-[color:var(--text-secondary)] lg:border-none" />
       {/* Dark mode button */}
-      <section className="flex flex-rows lg:gap-3 items-center justify-between lg:justify-center">
+      <article className="flex flex-rows lg:gap-3 items-center justify-between lg:justify-center">
         <label htmlFor="switch" className="text-sm font-semibold text-[color:var(--text-secondary)]">Dark Mode</label>
-
-        <article className="relative items-center cursor-pointer">
+        <header className="relative items-center cursor-pointer">
           {/* sr-only ซ่อนเอาไว้ในเพจปกติเพื่อแสดงในโปรแกรมการอ่านหหน้าจอเท่านั้น เช่น ฟอร์มที่ไม่มี label เขียนไว้จะเป็นปัญหาสำหรับผู้มีปัญหาสายตาที่ใช้โปรแกรมการอ่านหน้าจอ แต่เราก็ต้องการสไตล์แบบไม่มี label เช่นกัน เราเลยใช้ sr-only เพื่อซ่อนมันในปกติ แต่มันก็จะแสดงหากมีใครใช้โปรแกรมการอ่านหน้าจอ*/}
           {/* ในกรณีนี้เราใช้ sr-only ในการซ่อนปุ่ม checkbox หรือจะใช้อย่างอื่นเช่น appearance none ก็ได้ */}
           <input
@@ -43,8 +42,8 @@ export default function NavBar() {
             // และมากระทำกับอันนี้
             className="w-12 h-6 bg-gray-200 block rounded-full peer  peer-checked:after:translate-x-[22px] after:content-[''] after:absolute after:top-0.5 after:left-[3px] after:bg-white  after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gradient-to-l from-[color:var(--LimeGreen)] to-[color:var(--Twitter)]"
           ></span>
-        </article>
-      </section>
+        </header>
+      </article>
       {/*End Dark mode button */}
     </nav>
   );
