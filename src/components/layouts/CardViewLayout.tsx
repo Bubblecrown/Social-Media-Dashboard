@@ -13,7 +13,7 @@ export default function CardViewLayout() {
         <h1 className="text-2xl font-bold text-[color:var(--text-secondary)] mb-8 lg:text-2xl lg:mb-6">
           Overview - Today
         </h1>
-        <span className="grid grid-cols-1 lg:grid-cols-4 w-full gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-4 w-full gap-4 md:grid-cols-2">
           <CardView
             image={facebookIcon}
             label="Page Views"
@@ -70,7 +70,7 @@ export default function CardViewLayout() {
             arrow={downIcon}
             percentage={12}
           />
-        </span>
+        </div>
       </article>
     </section>
   );
