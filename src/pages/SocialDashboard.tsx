@@ -13,13 +13,13 @@ export default function SocialDashboard() {
     >
       <div className="bg-[color:var(--bg-pattern)] h-1/4 md:h-1/3 lg:h-2/3">
         <NavBar />
-        <article>
+        <div>
           <CardLayout />
-        </article>
+        </div>
       </div>
-      <section>
+      <div>
         <CardViewLayout />
-      </section>
+      </div>
     </main>
   );
 }

@@ -9,7 +9,7 @@ import downIcon from "../../assets/icon-down.svg";
 
 export default function CardLayout() {
   return (
-    <section className="flex justify-center w-full px-[10%]">
+    <div className="flex justify-center w-full px-[10%]">
       <header className="w-full grid lg:grid-cols-4 gap-5 md:grid-cols-2">
         <CardFollower
           borderColor="border-[color:var(--Facebook)]"
@@ -44,6 +44,6 @@ export default function CardLayout() {
           today={144}
         />
       </header>
-    </section>
+    </div>
   );
 }
