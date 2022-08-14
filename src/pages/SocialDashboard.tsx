@@ -12,10 +12,12 @@ export default function SocialDashboard() {
         className="font-inter bg-[color:var(--bg)] lg:h-screen  grid"
         data-mode={mode === true ? "darkMode" : "lightMode"}
       >
-        <NavBar />
-        <article>
-          <CardLayout />
-        </article>
+        <section className="bg-[color:var(--bg-pattern)] h-1/4 md:h-1/3 lg:h-2/3">
+          <NavBar />
+          <article>
+            <CardLayout />
+          </article>
+        </section>
         <section>
           <CardViewLayout />
         </section>

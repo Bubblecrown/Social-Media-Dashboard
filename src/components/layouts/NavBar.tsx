@@ -11,7 +11,7 @@ export default function NavBar() {
 
   
   return (
-    <nav className="px-[10%] py-8 flex flex-col lg:justify-between lg:flex-row">
+    <nav className="px-[10%] py-8 flex flex-col lg:justify-between lg:flex-row ">
       <section className="flex flex-wrap flex-col justify-center items-start">
         <h1 className="text-3xl font-bold text-[color:var(--text-primary)]">
           Social Media Dashboard
