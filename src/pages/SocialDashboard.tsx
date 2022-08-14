@@ -8,7 +8,7 @@ export default function SocialDashboard() {
   const { mode } = useContext(SwitchContext);
   return (
     <main
-      className="font-inter bg-[color:var(--bg)] lg:h-screen  grid"
+      className="font-inter bg-[color:var(--bg)] lg:h-screen items-baseline grid"
       data-mode={mode === true ? "darkMode" : "lightMode"}
     >
       <div className="bg-[color:var(--bg-pattern)] h-1/4 md:h-1/3 lg:h-2/3">
