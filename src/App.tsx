@@ -3,13 +3,13 @@ import SocialDashboard from "./pages/SocialDashboard";
 import { ContextTypes } from "./type/ContextTypes.type";
 
 export const SwitchContext = createContext<ContextTypes>({
-  mode: "",
+  mode: false,
   setMode(){}
 });
 ;
 
 export default function App() {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState(false);
   
   return (
     <SwitchContext.Provider value={{mode, setMode}}>

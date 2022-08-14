@@ -4,10 +4,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .borderGradient {
+    border-image: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%))
+      1;
+  }
+  [data-mode="darkMode"] {
+    /***** Light theme *****/
+    --bg: hsl(230, 17%, 14%);
+    /* BG */
 
-@layer components{
-  .borderGradient{
-    border-image:linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+    --bg-pattern: hsl(232, 19%, 15%);
+    /* Top BG Pattern */
+
+    --bg-card: hsl(228, 28%, 20%);
+    /* Card BG */
+
+    --text-secondary: hsl(228, 34%, 66%);
+    /* Text */
+
+    --text-primary: hsl(0, 0%, 100%);
+    /* Text */
+  }
+
+  [data-mode="lightMode"] {
+    /***** Light theme *****/
+    --bg:hsl(0, 0%, 100%);
+    /* BG */
+
+    --bg-pattern:hsl(225, 100%, 98%);
+    /* Top BG Pattern */
+
+    --bg-card: hsl(227, 47%, 96%);
+    /* Card BG */
+
+    --text-secondary: hsl(228, 12%, 44%);
+    /* Text */
+
+    --text-primary: hsl(230, 17%, 14%);
+    /* Text */
   }
 }
 
@@ -51,7 +86,7 @@
   --DesaturatedBlue: hsl(228, 34%, 66%);
   /* Text */
 
-  --White: hsl(0, 0%, 100%);
+  --White: hsl(0, 0%, 100%) !important;
   /* Text */
 
   /***** End Dark theme *****/

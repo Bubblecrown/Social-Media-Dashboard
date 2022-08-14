@@ -4,15 +4,15 @@ import { CardViewProps } from "../type/CardView";
 export default function CardView(props: CardViewProps) {
   return (
     <main>
-      <section className="bg-[color:var(--LightGrayishBlue)] p-6 box-border rounded-md gap-5 grid">
+      <section className="bg-[color:var(--bg-card)] p-6 box-border rounded-md gap-5 grid">
         <article className="flex justify-between items-center" >
-          <h2 className="font-semibold text-[color:var(--DarkGrayishBlue)]">
+          <h2 className="font-semibold text-[color:var(--text-secondary)]">
             {props.label}
           </h2>
           <img src={props.image} alt="" className="w-5 h-auto"/>
         </article>
         <article className="flex justify-between items-end">
-          <h1 className="text-3xl font-bold">{props.views}</h1>
+          <h1 className="text-3xl font-bold text-[color:var(--text-primary)]">{props.views}</h1>
           <span className="flex items-center">
             <img src={props.arrow} alt="" />
             <p

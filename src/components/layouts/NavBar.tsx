@@ -1,26 +1,29 @@
+import classnames from "classnames";
 import React, { useContext, useState } from "react";
 import { SwitchContext } from "../../App";
 
 export default function NavBar() {
+  const {mode, setMode} = useContext(SwitchContext)
+  
   const toggleSwitch = (checked: any) => {
     setMode(checked);
   };
-  const {mode, setMode} = useContext(SwitchContext)
-  const [enable, setEnable] = useState(false);
+
+  
   return (
     <nav className="px-[10%] py-8 flex flex-col lg:justify-between lg:flex-row">
       <section className="flex flex-wrap flex-col justify-center items-start">
-        <h1 className="text-2xl font-bold text-[color:var(--VeryDarkBlue)]">
+        <h1 className="text-3xl font-bold text-[color:var(--text-primary)]">
           Social Media Dashboard
         </h1>
-        <p className="text-[12.5px] font-semibold text-[color:var(--DarkGrayishBlue)]">
+        <p className="text-sm font-semibold text-[color:var(--text-secondary)]">
           Total Followers: 23,004
         </p>
       </section>
-      <hr className="my-4 border-t-[color:var(--DarkGrayishBlue)] lg:border-none" />
+      <hr className="my-4 border-t-[color:var(--text-secondary)] lg:border-none" />
       {/* Dark mode button */}
       <section className="flex flex-rows lg:gap-3 items-center justify-between lg:justify-center">
-        <p className="text-sm font-semibold text-[color:var(--DarkGrayishBlue)]">
+        <p className="text-sm font-semibold text-[color:var(--text-secondary)]">
           Dark Mode
         </p>
 
@@ -31,11 +34,11 @@ export default function NavBar() {
             type="checkbox"
             // ใช peer เพื่อสังเกต action ตรงนี้
             className="sr-only peer"
-            checked={enable}
+            checked={mode}
             onChange={toggleSwitch}
           />
           <div
-            onClick={() => setEnable(!enable)}
+            onClick={() => setMode(!mode)}
             // peer สังเกตพฤติกรรมของการเช็คเพื่อทำให้บางสิ่งเกิดขึ้นกับอย่างอื่น
             // และมากระทำกับอันนี้
             className="w-12 h-6 bg-gray-200 rounded-full peer  peer-checked:after:translate-x-[22px] after:content-[''] after:absolute after:top-0.5 after:left-[3px] after:bg-white  after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-gradient-to-l from-[color:var(--LimeGreen)] to-[color:var(--Twitter)]"
