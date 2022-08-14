@@ -12,7 +12,7 @@ export default function CardView(props: CardViewProps) {
           <img src={props.image} alt="" className="w-5 h-auto"/>
         </article>
         <article className="flex justify-between items-end">
-          <h1 className="text-3xl font-bold text-[color:var(--text-primary)]">{props.views}</h1>
+          <h2 className="text-3xl font-bold text-[color:var(--text-primary)]">{props.views}</h2>
           <div className="flex items-center">
             <img src={props.arrow} alt="" />
             <p
