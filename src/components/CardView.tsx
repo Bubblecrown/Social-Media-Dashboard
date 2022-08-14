@@ -13,7 +13,7 @@ export default function CardView(props: CardViewProps) {
         </article>
         <article className="flex justify-between items-end">
           <h1 className="text-3xl font-bold text-[color:var(--text-primary)]">{props.views}</h1>
-          <span className="flex items-center">
+          <div className="flex items-center">
             <img src={props.arrow} alt="" />
             <p
               className={
@@ -25,7 +25,7 @@ export default function CardView(props: CardViewProps) {
             >
               {props.percentage}%
             </p>
-          </span>
+          </div>
         </article>
       </section>
     </>
