@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Social-Media-Dashboard/static/css/main.dd99920a.css",
-    "main.js": "/Social-Media-Dashboard/static/js/main.9bc737de.js",
+    "main.css": "/Social-Media-Dashboard/static/css/main.e184451a.css",
+    "main.js": "/Social-Media-Dashboard/static/js/main.cd875736.js",
     "static/js/787.b0281f52.chunk.js": "/Social-Media-Dashboard/static/js/787.b0281f52.chunk.js",
     "static/media/icon-instagram.svg": "/Social-Media-Dashboard/static/media/icon-instagram.568b5795d56c7d9247f495cb5488f8be.svg",
     "index.html": "/Social-Media-Dashboard/index.html",
@@ -10,12 +10,12 @@
     "static/media/icon-facebook.svg": "/Social-Media-Dashboard/static/media/icon-facebook.8deee3e3b5c57f63a1f487e146852570.svg",
     "static/media/icon-down.svg": "/Social-Media-Dashboard/static/media/icon-down.fd673b98b0619ced57f857bea13c0c11.svg",
     "static/media/icon-up.svg": "/Social-Media-Dashboard/static/media/icon-up.09cfa95e6e89e162c5c150356e6de276.svg",
-    "main.dd99920a.css.map": "/Social-Media-Dashboard/static/css/main.dd99920a.css.map",
-    "main.9bc737de.js.map": "/Social-Media-Dashboard/static/js/main.9bc737de.js.map",
+    "main.e184451a.css.map": "/Social-Media-Dashboard/static/css/main.e184451a.css.map",
+    "main.cd875736.js.map": "/Social-Media-Dashboard/static/js/main.cd875736.js.map",
     "787.b0281f52.chunk.js.map": "/Social-Media-Dashboard/static/js/787.b0281f52.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd99920a.css",
-    "static/js/main.9bc737de.js"
+    "static/css/main.e184451a.css",
+    "static/js/main.cd875736.js"
   ]
 }
