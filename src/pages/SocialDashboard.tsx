@@ -8,17 +8,15 @@ export default function SocialDashboard() {
   const { mode } = useContext(SwitchContext);
   return (
     <main
-      className="font-inter bg-[color:var(--bg)] lg:h-screen items-baseline grid"
+      className="font-inter bg-[color:var(--bg)] h-screen "
       data-mode={mode === true ? "darkMode" : "lightMode"}
     >
-      <div className="bg-[color:var(--bg-pattern)] h-1/4 md:h-1/3 lg:h-2/3">
-        <NavBar />
+      <div className=" bg-[color:var(--bg-pattern)] h-2/6">
         <div>
+          <NavBar />
           <CardLayout />
+          <CardViewLayout />
         </div>
-      </div>
-      <div>
-        <CardViewLayout />
       </div>
     </main>
   );
